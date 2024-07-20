@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    --blog-bg: hsl(47, 88%, 63%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+    --font: "Figtree", sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    min-height: 100vh;
+    background-color: var(--blog-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 330px;
+    padding: 1.1rem;
+    border-radius: 16px;
+    box-shadow: 10px 10px 1px 0 rgba(0,0,0,1);
+}
+
+.blog-image img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+}
+
+.poster-detailts p:nth-child(1) {
+    display: inline;
+    background-color: var(--blog-bg);
+    padding: 0.4rem 0.9rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.poster-detailts p:nth-child(2) {
+    color: var(--grey);
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 0.88rem;
+}
+
+.blog-content h1 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.blog-content p {
+    max-width: 350px;
+    color: var(--grey);
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+.blog-profile {
+    display: flex;
+    align-items: center;
+}
+.blog-profile img {
+    width: 40px;
+}
+
+.blog-profile p {
+    font-weight: bold;
+    margin-left: 0.7rem;
+}
+
+
+@media all and (max-width: 500px) {
+    .container {
+        margin: 0 3em;
+    }
+}
